@@ -34,25 +34,26 @@ public class Main {
         System.out.println("Задание 3");
         int year = 1903;
         if(year%4==0 && year%100 !=0 || year%400==0){
-            System.out.println(year + "является високосным годом");
+            System.out.println(year + " является високосным годом");
         } else {
-            System.out.println(year + "является невисокосным годом");
+            System.out.println(year + " является невисокосным годом");
         }
         System.out.println();
 
         // Задание 4
         System.out.println("Задание 4");
-        int  deliveryDistance = 95;
+        int  deliveryDistance = 18;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется день для доставки карты");
         }
-        if (deliveryDistance >20 && deliveryDistance <=60){
+        else if (deliveryDistance >20 && deliveryDistance <=60){
             System.out.println("Потребуется два дня для доставки карты");
         }
-        if (deliveryDistance >60 && deliveryDistance <= 100){
+        else if (deliveryDistance >60 && deliveryDistance <= 100){
             System.out.println("Потребуется три дня для достваки карты");
-        }
+        } else System.out.println("На такое расстояние доставка не доставляется, приносим свои извинения");
         System.out.println();
+
 
         // Задание 5
         System.out.println("Задание 5");
